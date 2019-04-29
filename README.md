@@ -9,4 +9,5 @@
 * Det simpleste vuejs setup https://codepen.io/springborg/pen/mggrzN
 * Guide https://vuejs.org/v2/guide/
 * vue-cli bruger webpack til at bygge https://webpack.js.org/
+* https://medium.com/js-dojo/7-ways-to-define-a-component-template-in-vuejs-c04e0c72900d
 
