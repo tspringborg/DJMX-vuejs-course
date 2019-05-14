@@ -5,6 +5,10 @@
 
 $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
 
+@mixin random-bgr(){
+  background: rgb(random(255), random(255), random(255));
+}
+
 @mixin burger-menu($lineheight, $spacing, $active-class, $color){
   height:$lineheight;
   position: relative;
