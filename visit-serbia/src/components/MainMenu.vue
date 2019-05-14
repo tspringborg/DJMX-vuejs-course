@@ -41,25 +41,26 @@
 <style lang="scss">
 	@import '../assets/style/vars';
 	$bgColor: white;
-	$burgerHeight: 50px;
+	$burgerHeight: 30px;
 	.main-menu {
 		position: fixed;
 		width: 100vw;
+		left: 0;
 		height: $burgerHeight + $padding * 2;
 		background-color: $bgColor;
 		right: 0;
 		top: 0;
 		.bar {
 			display: flex;
+			flex-direction: row-reverse;
 			align-items: center;
 			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
 		}
 		.burger {
-			position: fixed;
-			right: $padding;
-			height: $burgerHeight;
-			width: 50px;
-			//width: 50px;
+			padding-right: $padding;
+			width: $burgerHeight;
 			.inner {
 				@include burger-menu(4px, $burgerHeight / 4, 'active', #000000);	
 			}
@@ -68,6 +69,11 @@
 		a{
 			font-size: 50px;
 			text-decoration: none;
+			font-weight: bold;
+            color: #2c3e50;
+            &.router-link-exact-active {
+              color: #42b983;
+            }
 		}
 		.content {
 			.inner {

@@ -1,5 +1,6 @@
 <template>
     <div class="page">
+    	<slot name="hero"></slot>
     	<slot></slot>
     </div>
 </template>
