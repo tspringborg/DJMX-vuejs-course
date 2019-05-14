@@ -1,6 +1,10 @@
 <template>
 	<div class="home page" id="home">
-		<img class="hero" alt="Vue logo" src="../assets/hero.jpg">
+		<hero
+			image="./hero.jpg"
+			text="Visit Serbia"
+		>
+		</hero>
 		<section>
 			<h1>{{line()}}</h1>
 			<p v-for="i in 10">{{line()}}</p>
@@ -11,6 +15,7 @@
 <script>
 // @ is an alias to /src
 import Random from '@/assets/random.js'
+import Hero from '@/components/Hero.vue'
 
 export default {
   name: 'home',
@@ -20,6 +25,7 @@ export default {
   	},
   },
   components: {
+  	Hero,
   },
   mounted() {
   	console.log(Random)
@@ -29,9 +35,4 @@ export default {
 
 <style lang="scss" scoped>
 	@import '../assets/style/vars';
-
-	img.hero {
-		width: 100vw;
-		height: auto;
-	}
 </style>

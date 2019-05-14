@@ -55,6 +55,9 @@
     }
     .page {
         margin-top: $menuHeight;
-        padding: $padding;
+        section{
+            padding: $padding;
+            padding-top: 0;
+        }
     }
 </style>

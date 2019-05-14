@@ -85,7 +85,7 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			top: $burgerHeight + $padding + $padding - 1px;
+			top: $menuHeight - 1px;
 			height: 0;
 			overflow: hidden;
 			transition: height 260ms $easeOutCubic;
