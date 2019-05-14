@@ -77,7 +77,7 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			top: $burgerHeight + $padding + $padding;
+			top: $burgerHeight + $padding + $padding - 1px;
 			height: 0;
 			overflow: hidden;
 			transition: height 260ms $easeOutCubic;
@@ -85,7 +85,7 @@
 		}
 		&.expanded {
 			.content {
-				height: calc(100vh - #{$burgerHeight});	
+				height: calc(100vh - #{$burgerHeight} + 1px);
 			}
 		}
 	}
