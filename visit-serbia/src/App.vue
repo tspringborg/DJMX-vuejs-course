@@ -53,4 +53,8 @@
         text-align: center;
         color: #2c3e50;
     }
+    .page {
+        margin-top: $menuHeight;
+        padding: $padding;
+    }
 </style>

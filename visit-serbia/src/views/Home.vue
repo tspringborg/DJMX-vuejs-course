@@ -1,20 +1,16 @@
 <template>
-	<BasePage>
-	  <div class="home" id="home">
-	    <img class="hero" alt="Vue logo" src="../assets/hero.jpg">
-	    <section>
-	    	<h1>{{line()}}</h1>
-
-	    	<p v-for="i in 10">{{line()}}</p>
-	    </section>
-	  </div>
-	</BasePage>
+	<div class="home page" id="home">
+		<img class="hero" alt="Vue logo" src="../assets/hero.jpg">
+		<section>
+			<h1>{{line()}}</h1>
+			<p v-for="i in 10">{{line()}}</p>
+		</section>
+	</div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Random from '@/assets/random.js'
-import BasePage from '@/components/BasePage.vue'
 
 export default {
   name: 'home',
@@ -24,7 +20,6 @@ export default {
   	},
   },
   components: {
-    BasePage,
   },
   mounted() {
   	console.log(Random)

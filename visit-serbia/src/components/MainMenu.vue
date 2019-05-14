@@ -41,12 +41,12 @@
 <style lang="scss">
 	@import '../assets/style/vars';
 	$bgColor: white;
-	$burgerHeight: 30px;
+	$burgerHeight: $menuHeight;
 	.main-menu {
 		position: fixed;
 		width: 100vw;
 		left: 0;
-		height: $burgerHeight + $padding * 2;
+		height: $menuHeight;
 		background-color: $bgColor;
 		right: 0;
 		top: 0;
@@ -57,12 +57,14 @@
 			height: 100%;
 			width: 100%;
 			box-sizing: border-box;
+			padding: $padding;
 		}
 		.burger {
-			padding-right: $padding;
-			width: $burgerHeight;
+			//padding-right: $padding;
+			height: $burgerHeight - $padding * 2;
+			width: $burgerHeight - $padding * 2;
 			.inner {
-				@include burger-menu(4px, $burgerHeight / 4, 'active', #000000);	
+				@include burger-menu(4px, ($burgerHeight - $padding * 2) / 4, 'active', #000000);	
 			}
 		}
 		//display: flex;
