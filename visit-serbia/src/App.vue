@@ -25,6 +25,14 @@
                     {
                         link: '/book',
                         label: 'Book an adventure',
+                    },
+                    {
+                        link: '/slavic-squatting',
+                        label: 'Our national pride',
+                    },
+                    {
+                        link: '/info',
+                        label: 'Info',
                     }
                 ]
             }

@@ -19,6 +19,7 @@ $easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   &:after,
   &:before{
+  	left: 0;
     position: absolute;
     content:"";
     width:100%;
