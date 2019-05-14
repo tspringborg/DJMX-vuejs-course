@@ -44,6 +44,7 @@
 	$burgerHeight: $menuHeight;
 	.main-menu {
 		position: fixed;
+		z-index: 99;
 		width: 100vw;
 		left: 0;
 		height: $menuHeight;
