@@ -33,11 +33,12 @@
         	/*
         	TweenMax.staggerTo( targets:Array, duration:Number, vars:Object, stagger:Number | Object | Function, onCompleteAll:Function, onCompleteAllParams:Array, onCompleteAllScope:* ) : Array
         	*/
-        	TweenMax.staggerTo(this.$refs.texts, 1.5, {
+        	TweenMax.staggerTo(this.$refs.texts, 0.5, {
         		yoyo: true,
-        		scale: 1.6,
+        		scale: 2,
+        		y: '-=100',
         		repeat: -1,
-        	}, 0.11)
+        	}, 0.02)
         },
         methods: {
         },
