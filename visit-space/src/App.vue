@@ -17,24 +17,8 @@
         },
         data() {
             return {
-                pages: [
-                    {
-                        link: '/',
-                        label: 'Visit us!',
-                    },
-                    {
-                        link: '/book',
-                        label: 'Book an adventure',
-                    },
-                    {
-                        link: '/slavic-squatting',
-                        label: 'Our national pride',
-                    },
-                    {
-                        link: '/info',
-                        label: 'Info',
-                    }
-                ]
+                // use router routes here instead of hardcoding them
+                pages: Router.options.routes,
             }
         },
         methods: {
