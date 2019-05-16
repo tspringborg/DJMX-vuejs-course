@@ -40,7 +40,7 @@
         color: #2c3e50;
     }
     .page {
-        margin-top: $menuHeight;
+        //margin-top: $menuHeight;
         section{
             padding: $padding;
             padding-top: 0;

@@ -12,17 +12,27 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'Asan',
+      component: Home,
     },
     {
       path: '/book-tour',
-      name: 'book',
+      name: 'Book tour',
       component: Book,
     },
     {
+      path: '/about',
+      name: 'About',
+      component: Info,
+    },
+    {
       path: '/destinations',
-      name: 'destinations',
+      name: 'Destinations',
+      component: Info,
+    },
+    {
+      path: '/technology',
+      name: 'Technology',
       component: Info,
     },
     {
@@ -35,15 +45,5 @@ export default new Router({
       name: 'Press',
       component: Info,
     },
-    {
-      path: '/technology',
-      name: 'Technology',
-      component: Info,
-    },
-    {
-      path: '/about',
-      name: 'About',
-      component: Info,
-    }
   ]
 })
