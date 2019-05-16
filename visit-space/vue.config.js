@@ -2,6 +2,6 @@
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/ts/dmjx/visit-serbia/'
+    ? '/ts/dmjx/visit-space/'
     : '/'
 }

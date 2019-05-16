@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Info from './views/Info'
+import Book from './views/Book'
 
 Vue.use(Router)
 
@@ -14,22 +16,34 @@ export default new Router({
       component: Home
     },
     {
-      path: '/book',
+      path: '/book-tour',
       name: 'book',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/Book.vue')
+      component: Book,
     },
     {
-      path: '/slavic-squatting',
-      name: 'Getting your squat on',
-      component: () => import('./views/SlavicSquatting.vue')
+      path: '/destinations',
+      name: 'destinations',
+      component: Info,
     },
     {
-      path: '/info',
-      name: 'Getting your squat on',
-      component: () => import('./views/Info.vue')
+      path: '/data',
+      name: 'Data',
+      component: Info,
+    },
+    {
+      path: '/press',
+      name: 'Press',
+      component: Info,
+    },
+    {
+      path: '/technology',
+      name: 'Technology',
+      component: Info,
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: Info,
     }
   ]
 })

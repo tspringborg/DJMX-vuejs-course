@@ -7,6 +7,8 @@
 
 <script>
     import MainMenu from '@/components/MainMenu'
+    import Router from './router.js'
+    console.log(Router)
 
     export default {
         name: 'App',
