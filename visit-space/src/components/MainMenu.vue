@@ -96,7 +96,7 @@
 		}
 		//display: flex;
 		a{
-			font-size: 50px;
+			@include responsive-type(20px, 50px);
 			text-decoration: none;
 			font-weight: bold;
             color: #2c3e50;
@@ -136,7 +136,7 @@
 				flex-wrap: wrap;
 				>* {
 					border-top: $border;
-					&:nth-child(1n + 1) {
+					&:nth-child(2n + 2) {
 						border-left: $border;
 					}
 					text-align: left;
@@ -155,7 +155,7 @@
 			color: black;
 			background-color: $bgColor;
 			.content {
-				height: calc(100vh - #{$menuHeight + $padding * 2});
+				height: calc(100vh - #{$menuHeight + $padding});
 			}
 		}
 	}
